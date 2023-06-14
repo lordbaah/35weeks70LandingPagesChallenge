@@ -1,0 +1,1931 @@
+@import 'utilities.css';
+:root {
+    --bg-colour: #d0e9e9;
+    --bg-colour-dark: #e9f5f5;
+    --main-colour: #348183;
+    --main-colour-dark: #163636;
+    --main-colour-grayish: #163636;
+    --secondary-colour: #dd9f39;
+    --alpha: 29.57%;
+    --faint-white: rgba(255 255 255 / var(--alpha));
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-colour-dark);
+    font-family: 'Catamaran', sans-serif;
+}
+ /* Header style  */
+
+ .top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+ }
+ header{
+    background: url(../zoo/images/hero.png) no-repeat;
+    height: 100vh;
+    background-size: 60%;
+    background-position-x: 100%;
+ }
+ .logo_mobile{
+    display: none;
+ }
+ .logo{
+    color: var(--main-colour-dark);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: 'Catamaran', sans-serif;
+    position: relative;
+    top: 0.2rem;
+ }
+ nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2rem;
+ }
+ nav ul li a{
+    text-decoration: none;
+    color: var(--main-colour);
+    font-size: 0.9rem;
+ }
+.top-menu .btn_top{
+    background: transparent;
+    font-family: inherit;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 12px 26px;
+}
+/* hero content  */
+.top-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 7rem;
+    gap: 2rem;
+    padding: 8rem 2rem 0 2rem;
+}
+.top-content h4{
+    color: var(--main-colour);
+    font-weight: 700;
+}
+.top-content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 4rem;
+}
+.top-content p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+.top-content .btn_content{
+    background: var(--main-colour);
+    font-family: inherit;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+/* end of header or hero  */
+
+/* start of zoo features  */
+
+.zoo_features{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.feature_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem 0 2rem;
+}
+ 
+.feature_head h4{
+    color: var(--main-colour);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.feature_head h2{
+    color: var(--main-colour-dark);
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+
+
+/* cards section  */
+.zoo_features .features_grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* card exotic  */
+
+.zoo_features .features_grid .card_exotic{
+    background: var(--bg-colour-dark);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 30px;
+}
+
+.zoo_features .features_grid .card_exotic .icon{
+    background-color: #fff;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.zoo_features .features_grid .card_exotic .title {
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.zoo_features .features_grid .card_exotic p{
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    color: var(--main-colour);
+    padding-top: 1rem;
+    line-height: 1.4rem;
+}
+
+/* card mordern  */
+
+.zoo_features .features_grid .card_mordern{
+    background: #fff;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 30px;
+}
+
+.zoo_features .features_grid .card_mordern .icon{
+    background-color: var(--bg-colour-dark);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.zoo_features .features_grid .card_mordern .title {
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.zoo_features .features_grid .card_mordern p{
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    color: var(--main-colour);
+}
+
+/* card popular  */
+
+.zoo_features .features_grid .card_popular{
+    background: var(--bg-colour-dark);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 30px;
+}
+
+.zoo_features .features_grid .card_popular .icon{
+    background-color: #fff;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.zoo_features .features_grid .card_popular .title {
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.zoo_features .features_grid .card_popular p{
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    color: var(--main-colour);
+}
+
+/* End of features section  */
+
+/* About Zoo section start  */
+
+.about_zoo{
+    height: 140vh;
+    display: flex;
+    justify-content: space-between;
+}
+.about_zoo img{
+    height: 800px;
+}
+.about_zoo .about_info{
+    gap: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 7rem;
+    margin-top: 2rem;
+}
+.about_zoo .about_info h4{
+    color: var(--main-colour);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about_zoo .about_info h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 4rem;
+}
+.about_zoo .about_info p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem
+}
+.about_zoo .about_info ul{
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+.about_zoo .about_info ul li{
+    line-height: 3rem;
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about_zoo .about_info .link p{
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about_zoo .about_info .link a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4rem
+}
+
+/* end of About  */
+
+/* start of live section  */
+
+.watch_video{
+    height: 120vh;
+}
+.watch_video .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.watch_video .content h4{
+    color: var(--main-colour);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.watch_video .content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 4rem;
+}
+.watch_video .content p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+/* animal box styling  */
+
+.gif_img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    margin-left: 3rem;
+}
+.gif_img img{
+    height: 500px;
+}
+
+/* end of main page image  */
+
+.gif_img .profile_box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 5rem;
+}
+
+ /* common elements  */
+.icon_box{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+    /* girrafe profile  */
+
+.gif_img .profile_box .girrafe{
+    background: var(--main-colour);
+    height: 8rem;
+    width: 23rem;
+    border-radius: 25px;
+    display: flex;
+}
+.gif_img .profile_box .girrafe .icon_bg{
+    background: #fff;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif_img .profile_box .girrafe img{
+    height: 3rem;
+    width: 3rem;
+}
+.girrafe .profile_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.girrafe .profile_content h1{
+    font-family: 'Catamaran', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.girrafe .profile_content p{
+    font-family: 'Catamaran', sans-serif;
+    color: var(--faint-white);
+    font-weight: 200;
+}
+
+     /* monkey profile styling  */
+
+
+.gif_img .profile_box .monkey{
+    background: #fff;
+    height: 8rem;
+    width: 23rem;
+    border-radius: 25px;
+    display: flex;
+}
+.gif_img .profile_box .monkey .icon_bg{
+    background: var(--bg-colour);
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif_img .profile_box .monkey img{
+    height: 3rem;
+    width: 3rem;
+}
+.monkey .profile_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.monkey .profile_content h1{
+    font-family: 'Catamaran', sans-serif;
+    color: var(--main-colour-dark);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.monkey .profile_content p{
+    font-family: 'Catamaran', sans-serif;
+    color: var(--main-colour);
+    font-weight: 200;
+}
+
+/* tiger profile  */
+
+.gif_img .profile_box .tiger{
+    background: #fff;
+    height: 8rem;
+    width: 23rem;
+    border-radius: 25px;
+    display: flex;
+}
+.gif_img .profile_box .tiger .icon_bg{
+    background: var(--bg-colour);
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif_img .profile_box .tiger img{
+    height: 3rem;
+    width: 3rem;
+}
+.tiger .profile_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.tiger .profile_content h1{
+    font-family: 'Catamaran', sans-serif;
+    color: var(--main-colour-dark);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.tiger .profile_content p{
+    font-family: 'Catamaran', sans-serif;
+    color: var(--main-colour);
+    font-weight: 200;
+}
+/* down arrow sytle  */
+
+.arrow_down{
+    height: 4rem;
+    width: 23rem;
+    background-color: #fff;
+    border-radius: 25rem;
+}
+.arrow_down .arrow_box{
+    display: flex;
+    justify-content: center;
+}
+.arrow_down .arrow_box img{
+   height: 3rem;
+   width: 3rem;
+   margin-top: 1rem;
+}
+
+/* end of video play section with girraffe image  */
+
+.service{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+}
+.service .tiger_img{
+    height: 800px;
+}
+.service .service_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+.service .service_content h4{
+    color: var(--main-colour);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service .service_content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 4rem;
+}
+.service .service_content p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+.service .service_content .line_text{
+    display: flex;
+    align-items: center;
+}
+.service .service_content .line_text img{
+    height: 5.2rem;
+}
+.service .service_content .line_text p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1.2rem;
+    line-height: 2rem;
+    color: var(--main-colour);
+
+}
+.service .service_content .learn_more p{
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.service .service_content .learn_more a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4rem
+}
+
+/* zoo map style  */
+
+.zoo_map{
+    height: 170vh;
+    padding-top: 10rem;
+}
+.zoo_map .map_image{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.zoo_map .map_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.zoo_map .map_content h4{
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.zoo_map .map_content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+.zoo_map .map_content p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.animals_count{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3.5rem;
+
+}
+.animals_count .animals{
+    display: flex;
+    justify-content: center;
+}
+.animals_count .animals .num_1 h1{
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: var(--main-colour-dark);
+}
+.animals_count .animals .animals_info{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+
+}
+.animals_count .animals .animals_info h2 {
+    color: var(--main-colour-dark);
+    font-weight: 700;
+}
+.animals_count .animals .animals_info p{
+    line-height: 1.5rem;
+    color: var(--main-colour-grayish);
+    padding-top: 1.2rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* END OF LOCATION SECTION  */
+
+/* gallery secton style  */
+
+.zoo_gallery{
+    height: 180vh;
+    padding-top: 11rem;
+
+}
+.zoo_gallery .gallery_content{
+    margin-left: 7rem;
+    
+}
+.zoo_gallery .gallery_content h4{
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.zoo_gallery .gallery_content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+.zoo_gallery .gallery_content p{
+    line-height: 1.5rem;
+    color: var(--main-colour-grayish);
+    padding-top: 1.2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+    /* gallery images view  */
+
+.zoo_gallery .image_gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+/* common elements in gallery large images */
+.animal_card_large{
+    background-color: var(--main-colour);
+    height: 23rem;
+    width: 32rem;
+    border-radius: 25px;
+}
+.animal_card_large .cover_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.animal_card_large .cover_img img{
+    height: 18rem;
+    width: 31rem;
+    border-radius: 25px;
+}
+.image_gallery  .animal_card_large .card_pro{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+.image_gallery  .animal_card_large .card_pro .backg{
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_gallery  .animal_card_large .card_pro .backg img{
+    height: 2rem;
+    width: 2rem;
+}
+.image_gallery .animal_card_large .card_pro h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+ /* first gallery  */
+
+.image_gallery .gallery_1{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.image_gallery .gallery_1 .animal_card{
+    background-color: var(--main-colour);
+    height: 23rem;
+    width: 14rem;
+    border-radius: 25px;
+}
+.image_gallery .gallery_1 .animal_card .cover_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_gallery .gallery_1 .animal_card img{
+    height: 18rem;
+    border-radius: 25px;
+    padding-top: 0.5rem;
+}
+.image_gallery  .gallery_1 .animal_card .card_pro{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+.image_gallery  .gallery_1 .animal_card .card_pro .backg{
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_gallery  .gallery_1 .animal_card .card_pro .backg img{
+    height: 2rem;
+    width: 2rem;
+}
+.image_gallery  .gallery_1 .animal_card .card_pro h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* second gallery  */
+.zoo_gallery .gallery_2{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.image_gallery .gallery_2 .animal_card{
+    background-color: var(--main-colour);
+    height: 23rem;
+    width: 14rem;
+    border-radius: 25px;
+}
+.image_gallery .gallery_2 .animal_card .cover_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_gallery .gallery_2 .animal_card img{
+    height: 18rem;
+    border-radius: 25px;
+    padding-top: 0.5rem;
+}
+.image_gallery  .gallery_2 .animal_card .card_pro{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+.image_gallery  .gallery_2 .animal_card .card_pro .backg{
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_gallery  .gallery_2 .animal_card .card_pro .backg img{
+    height: 2rem;
+    width: 2rem;
+}
+.image_gallery  .gallery_2 .animal_card .card_pro h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+                /* learn more of gallery section  */
+.zoo_gallery .gallery_learn{
+    text-align: center;
+    margin-top: 3rem;
+}
+.zoo_gallery .gallery_learn p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.zoo_gallery .gallery_learn a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+                /* end of gallery   */
+
+/* zoo tickets stying  */
+
+.zoo_tickets{
+    height: 140vh;
+    background: url(../zoo/images/tickets_bg.png) no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.zoo_tickets .ticket_info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.zoo_tickets .ticket_info h4{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.zoo_tickets .ticket_info h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 4rem;
+    text-align: center;
+}
+.zoo_tickets .ticket_info p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+.zoo_tickets .ticket_info .tickets_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.zoo_tickets .ticket_info .tickets_btn .btn_orange{
+    background-color: #dd9f39;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+.zoo_tickets .ticket_info .tickets_btn .btn_white{
+    background: transparent;
+    font-family: inherit;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    border: solid 1px;
+}
+
+     /* zoo events section styling  */
+
+.events_zoo{
+    height: 140vh;
+
+}
+.events_zoo .event_info{
+    margin-left: 10rem;
+}
+.events_zoo .event_info .heading h4{
+    color: var(--main-colour);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.events_zoo .event_info .heading h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.events_zoo .event_info .heading p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+/* events card style  */
+.events_zoo .event_pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 1rem;
+}
+.events_zoo .event_pictures .event_pic_cards{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-colour-dark);
+    height: 11rem;
+    width: 65rem;
+    border-radius: 25px;
+}
+
+.events_zoo .event_pictures .zebra_card{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 11rem;
+    width: 65rem;
+    border-radius: 25px;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content{
+    display: flex;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content .img_card{
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content .img_card img{
+    height: 10rem;
+    border-radius: 25px;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content .text_events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 0.7rem;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content .text_events h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.events_zoo .event_pictures .event_pic_cards .img_content .text_events p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+.events_zoo .event_pictures .event_pic_cards .calender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.events_zoo .event_pictures .event_pic_cards .calender h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 50px;
+}
+.events_zoo .event_pictures .event_pic_cards .calender p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.events_zoo .want_to_know{
+    padding-top: 3rem;
+    text-align: center;
+}
+.events_zoo .want_to_know p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.events_zoo .want_to_know a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+/* end of events section  */
+
+/* testimonials section  */
+.testimonials{
+    height: 120vh;
+    margin-top: 8rem;
+}
+.testimonials .testimonials_head{
+    text-align: center;
+}
+.testimonials .testimonials_head h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.testimonials .testimonials_head h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 3rem;
+}
+.testimonials .testimonials_head p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+.testimonials .testimony_cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* card with white background  */
+.testimonials .testimony_cards .white_bg{
+    background-color: #fff;
+    width: 22rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 35px;
+}
+.testimonials .testimony_cards .white_bg .profile_img{
+    /* background-color: var(--bg-colour-dark); */
+    background-image: url(../zoo/images/woman_pink_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.testimonials .testimony_cards .white_bg .profile_img img{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+.testimonials .testimony_cards .white_bg .rate_star{
+    margin-left: 1.5rem;
+}
+.testimonials .testimony_cards .white_bg .card_message{
+    margin-left: 1.5rem;
+}
+.testimonials .testimony_cards .white_bg .card_message p{
+    line-height: 1.5rem;
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.testimonials .testimony_cards .white_bg .card_message h2{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+/* end of white card styling  */
+
+/* left and right cards  */
+.testimonials .testimony_cards .left_margin{
+    margin-left: 5rem;
+}
+.testimonials .testimony_cards .right_margin{
+    margin-right: 5rem;
+}
+/* card same as background color styling  */
+
+.testimonials .testimony_cards .rate_card{
+    background-color: var(--bg-colour-dark);
+    width: 22rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 35px;
+}
+/* far left  */
+.testimonials .testimony_cards .rate_card .profile_img .bg{
+    /* background-color: #fff; */
+    background-image: url(../zoo/images/man_1.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* far right  */
+.testimonials .testimony_cards .rate_card .profile_img .far_right{
+    /* background-color: #fff; */
+    background-image: url(../zoo/images/man_2.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.testimonials .testimony_cards .rate_card .profile_img .bg img{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+.testimonials .testimony_cards .rate_card .rate_star{
+    margin-left: 1.5rem;
+}
+.testimonials .testimony_cards .rate_card .card_message{
+    margin-left: 1.5rem;
+}
+.testimonials .testimony_cards .rate_card .card_message p{
+    line-height: 1.5rem;
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.testimonials .testimony_cards .rate_card .card_message h2{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+.testimonials .wanna_know{
+    text-align: center;
+    margin-top: 3rem;
+}
+.testimonials .wanna_know p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem
+}
+.testimonials .wanna_know a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* end of testimonials  */
+
+/* zoo pricing  */
+.zoo_pricing {
+    height: 100vh;
+    background: url(../zoo/images/pricin_bg.png);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    /* display: flex; */
+    /* align-items: center; */
+
+}
+.zoo_pricing .price_card_bg{
+    /* background-color: red; */
+    /* height: 300px; */
+    /* width: 100rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 6rem;
+
+}
+/* price card  */
+.zoo_pricing .price_card_bg .price_card{
+    background-color: #fff;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+.zoo_pricing .price_card_bg .price_card h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 4rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.zoo_pricing .price_card_bg .price_card h2{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+.zoo_pricing .price_card_bg .price_card .price_list{
+    margin-left: 3rem;
+}
+.zoo_pricing .price_card_bg .price_card .price_list ul{
+    list-style-type: none;
+}
+.zoo_pricing .price_card_bg .price_card .price_list ul li{
+    line-height: 1.5rem;
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.zoo_pricing .price_card_bg .price_card .price_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoo_pricing .price_card_bg .price_card  button{
+    background: var(--main-colour);
+    color: #fff;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+/* price detials  */
+.zoo_pricing .price_card_bg .price_details{
+    /* background-color: green; */
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.zoo_pricing .price_card_bg .price_details h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.zoo_pricing .price_card_bg .price_details h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+.zoo_pricing .price_card_bg .price_details p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+.zoo_pricing .price_card_bg .price_details .know_more{
+
+}
+.zoo_pricing .price_card_bg .price_details .know_more p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.zoo_pricing .price_card_bg .price_details .know_more a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+/* end of pricing section  */
+
+/* donation section  */
+.zoo_donation{
+    height: 100vh;
+    background-image: url(../zoo/images/donation_bg.png);
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
+.zoo_donation .donation_bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 6rem;
+}
+.zoo_donation .donation_details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    gap: 2rem;
+}
+.zoo_donation .donation_details h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.zoo_donation .donation_details h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+.zoo_donation .donation_details p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+/* .zoo_donation .donation_details .know_more{
+
+} */
+.zoo_donation .donation_details .know_more p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.zoo_donation .donation_details .know_more a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* donation card  */
+
+.zoo_donation .donation_card{
+    background-color: #fff;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 6rem;
+}
+.zoo_donation .donation_card .circles{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.zoo_donation .donation_card .big_circle{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: var(--main-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoo_donation .donation_card .big_circle .small_circle{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoo_donation .donation_card .big_circle .small_circle h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.zoo_donation .donation_card .amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zoo_donation .donation_card .amount .bold h2{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.zoo_donation .donation_card .amount .light h4{
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.zoo_donation .donation_card .donate_button{
+    display: flex;
+    justify-content: center;
+}
+.zoo_donation .donation_card button{
+    background: var(--main-colour);
+    color: #fff;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+/* end of donation  */
+
+/* zoo questions  */
+
+.zoo_questions{
+    height: 120vh;
+}
+.zoo_questions .content{
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.zoo_questions .content h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.zoo_questions .content h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.zoo_questions .content p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+
+.zoo_questions .move_card{
+    display: flex;
+    justify-content: center
+}
+.zoo_questions .move_card .questions_card_bg{
+    height: 26rem;
+    width: 50rem;
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.zoo_questions .move_card .questions_card_bg .card_important{
+    margin-left: 2rem;
+}
+.zoo_questions .move_card .questions_card_bg .card_important h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.zoo_questions .move_card .questions_card_bg P{
+    line-height: 1.5rem;
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+.zoo_questions .move_card .questions_card_bg .card_important .head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.zoo_questions .move_card .questions_card_bg .card_important .arrowup{
+    margin-right: 2rem
+}
+
+.zoo_questions .move_card .questions_card_bg .meaning_ofzoo{
+    margin-left: 2rem;
+}
+.zoo_questions .move_card .questions_card_bg .meaning_ofzoo .head{
+    display: flex;
+    justify-content: space-between;
+}
+.zoo_questions .move_card .questions_card_bg .meaning_ofzoo .head h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.zoo_questions .move_card .questions_card_bg .meaning_ofzoo .arrowdown{
+    margin-right: 2rem;
+}
+.zoo_questions hr{
+    width: 90%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-colour);
+    border: 0 none;
+}
+
+
+/* zoo instagram styling  */
+
+.zoo_instagram{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zoo_instagram .insta_content{
+    display: flex;
+    gap: 3rem;
+}
+.zoo_instagram .insta_content .insta_head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.zoo_instagram .insta_content .insta_head h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.zoo_instagram .insta_content .insta_head p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* .zoo_instagram .insta_content .insta_head .learn{
+    
+} */
+.zoo_instagram .insta_content .insta_head .learn p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.zoo_instagram .insta_content .insta_head .learn a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.zoo_instagram .insta_content .pics {
+    display: flex;
+    gap: 2rem;
+}
+.zoo_instagram .insta_content .pics .pic_1{
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../zoo/images/children_feeding_girrafe_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+}
+.zoo_instagram .insta_content .pics .pic_2{
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../zoo/images/lion_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+}
+.zoo_instagram .insta_content .pics .pic_3{
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../zoo/images/elephant_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+}
+.zoo_instagram .insta_content .pics .pic_4{
+    height: 10rem;
+    width: 10rem;
+    background-image: url(../zoo/images/monkey_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+}
+
+/* end of instagram section styling  */
+
+/* zoo news styling  */
+
+.zoo_news{
+    height: 120vh;
+    margin-top: 3rem;
+}
+.zoo_news .news_head{
+    margin-left: 9rem;
+}
+.zoo_news .news_head h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.zoo_news .news_head h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.zoo_news .news_head p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+/* news card cointainer  */
+
+.zoo_news .news_img_bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* large news card  */
+.zoo_news .news_img_bg .news_card_large{
+    background-color: #fff;
+    height: 25rem;
+    width: 32rem;
+    border-radius: 25px;
+}
+.zoo_news .news_img_bg .news_card_large .cover_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.zoo_news .news_img_bg .news_card_large .cover_img img{
+    height: 18rem;
+    width: 31rem;
+    border-radius: 25px;
+}
+.zoo_news .news_img_bg .news_card_large h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.zoo_news .news_img_bg .news_card_large p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* small news cards  */
+.zoo_news .news_img_bg .news_card{
+    background-color: #fff;
+    height: 25rem;
+    width: 15rem;
+    border-radius: 25px;
+}
+.zoo_news .news_img_bg .news_card .cover_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.zoo_news .news_img_bg .news_card .cover_img img{
+    border-radius: 25px;
+}
+.zoo_news .news_img_bg .news_card .news_info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+.zoo_news .news_img_bg .news_card .news_info h4{
+    color: var(--main-colour);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.zoo_news .news_img_bg .news_card .news_info h1{
+    color: var(--main-colour-dark);
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.zoo_news .news_img_bg .news_card .news_info p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-top: 1rem;
+}
+.zoo_news .get_more{
+    text-align: center;
+    margin-top: 3rem;
+}
+.zoo_news .get_more p{
+    color: var(--main-colour);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.zoo_news .get_more a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* end of blog and news styling  */
+
+/* buy tickets  */
+
+.buy_tickets{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy_tickets .white_container{
+    background-color: white;
+    height: 27rem;
+    width: 65rem;
+    border-radius: 30px;
+}
+.buy_tickets .white_container .buy_info{
+    background-image: url(./images/tickets_last.png);
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    
+}
+.buy_tickets .white_container .buy_info .tickets_cn .content{
+   padding-top: 3rem;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .content h4{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .content h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .content p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .buy_btn{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1.5rem;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .buy_btn .btn_orange{
+    background-color: #dd9f39;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+.buy_tickets .white_container .buy_info .tickets_cn .buy_btn .btn_white{
+    background: transparent;
+    font-family: inherit;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    /* padding: 16px 24px; */
+    width: 154px;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    border: solid 1px;
+}
+
+/* footer styling  */
+footer{
+height: 50vh;
+}
+footer .top{
+    display: flex;
+    justify-content: space-around;
+}
+footer .top .f_logo h1{
+    color: var(--main-colour-dark);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: 'Catamaran', sans-serif;
+}
+/* footer .top .menu{
+    
+} */
+footer .top .menu ul{
+    list-style-type: none;
+}
+footer .top .menu ul li{
+    line-height: 2rem;
+    color: var(--main-colour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer .top .menu ul li a{
+    text-decoration: none;
+    color: var(--main-colour-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+footer .top  .social_icons .wp-icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    vertical-align: middle;
+    color: #fff;
+    margin-right: 5px;
+    background: #348183;
+}
+
+
+footer .down{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+footer .down .copyright{
+    margin-left: 4rem;
+}
+footer .down .copyright p{
+    color: var(--main-colour-grayish);
+    font-weight: 400;
+    font-size: 1rem;
+}
+footer .down .terms_and_privacy{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+footer .down .terms_and_privacy .terms a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+}
+footer .down .terms_and_privacy .privacy a{
+    text-decoration: none;
+    color: var(--main-colour-grayish);
+    font-weight: 700;
+    font-size: 1rem;
+}
+footer hr{
+    width: 90%;
+    height: 0.5px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-colour);
+    border: 0 none;
+}
+
+/* end of desktop version  */
