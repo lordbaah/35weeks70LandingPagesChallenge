@@ -1,156 +1,162 @@
-@import 'utilities.css';
-:root {
-    --bg-colour: #d0e9e9;
-    --bg-colour-dark: #e9f5f5;
-    --main-colour: #348183;
-    --main-colour-dark: #163636;
-    --main-colour-grayish: #163636;
-    --secondary-colour: #dd9f39;
-    --alpha: 29.57%;
-    --faint-white: rgba(255 255 255 / var(--alpha));
-  }
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --background-color:  #E9F5F5;
+    --fade-color: rgba(22, 54, 54, 0.5);
+    --font-black-color: #163636;
+    --section-head-color: #348183;
+    --hero-font-size: 4.5rem;
+    --sections-big-font: 3.5rem;
+    --sections-paragragh: 1.25rem;
+    --section-head-font: 0.875rem;
+    --fade-color-font: 1rem;
 }
 body{
-    background-color: var(--bg-colour-dark);
+    background: var(--background-color);
     font-family: 'Catamaran', sans-serif;
 }
- /* Header style  */
 
- .top-menu{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
- }
- header{
-    background: url(../zoo/images/hero.png) no-repeat;
-    height: 100vh;
-    background-size: 60%;
-    background-position-x: 100%;
- }
- .logo_mobile{
-    display: none;
- }
- .logo{
-    color: var(--main-colour-dark);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.5rem;
-    font-family: 'Catamaran', sans-serif;
-    position: relative;
-    top: 0.2rem;
- }
- nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 2rem;
- }
- nav ul li a{
-    text-decoration: none;
-    color: var(--main-colour);
-    font-size: 0.9rem;
- }
-.top-menu .btn_top{
     background: transparent;
-    font-family: inherit;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    padding: 12px 26px;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
 }
-/* hero content  */
-.top-content{
+.navbar{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 7rem;
-    gap: 2rem;
-    padding: 8rem 2rem 0 2rem;
-}
-.top-content h4{
-    color: var(--main-colour);
-    font-weight: 700;
-}
-.top-content h1{
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 4rem;
-}
-.top-content p{
-    color: var(--main-colour-grayish);
-    font-weight: 400;
-    line-height: 1.4rem;
-}
-.top-content .btn_content{
-    background: var(--main-colour);
-    font-family: inherit;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    /* padding: 16px 24px; */
-    width: 154px;
-    height: 48px;
-    text-transform: uppercase;
-    border-radius: 35px;
-}
-/* end of header or hero  */
-
-/* start of zoo features  */
-
-.zoo_features{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.feature_head{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 4rem 2rem 0 2rem;
 }
- 
-.feature_head h4{
-    color: var(--main-colour);
-    font-size: 0.8rem;
-    font-weight: 700;
+.navbar a{
+    font-weight: 400;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+    padding: 10px 20px;
 }
-.feature_head h2{
-    color: var(--main-colour-dark);
-    text-align: center;
+.navbar .logo{
     font-weight: 900;
-    font-size: 2rem;
-    padding-top: 1rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+#menu-icon{
+    font-size: 30px;
+    display: none;
+}
+.top-button{
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 24px;
+    padding: 10px 30px;
+    font-weight: 900;
+    font-size: var(--section-head-font);
+    background: transparent;
+    cursor: pointer;
+    /* position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%; */
 }
 
+section{
+    padding: 50px 0;
+}
 
+/* hero styling  */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./images/hero.png) no-repeat;
+    background-position: top right ;
+    background-size: 972px 915px;
+    display: flex;
+    align-items: center;
+}
+.hero-text{
+    margin-left: 10em;
+    margin-top: 5em;
+}
+.hero-text h2{
+    font-weight: 700;
+    font-size: var(--section-head-font);
+    color: var(--section-head-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-text h1{
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 4.5rem;
+    line-height: 5rem;
+    letter-spacing: -2px;
+}
+.hero-text p{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
+    margin-bottom: 2rem;
+}
+.hero-btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--section-head-color);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 24px;
+    font-weight: 900;
+    font-size: var(--section-head-font);
+    cursor: pointer;
+}
+/* end of hero  */
 
-/* cards section  */
-.zoo_features .features_grid{
+/* zoo faeture styling  */
+.features-text h2{
+    font-weight: 700;
+    font-size: var(--section-head-font);
+    color: var(--section-head-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.features-text h1{
+    margin-top: 2rem;
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+/* card styling  */
+.features_grid{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
-
-/* card exotic  */
-
-.zoo_features .features_grid .card_exotic{
-    background: var(--bg-colour-dark);
-    height: 20rem;
-    width: 20rem;
-    border-radius: 30px;
+ /* exotic card  */
+.card_exotic{
+    background: var(--background-color);
+    height: 25rem;
+    width: 23.125rem;
+    border-radius: 48px;
 }
-
-.zoo_features .features_grid .card_exotic .icon{
+.card_exotic .icon{
     background-color: #fff;
     height: 6rem;
     width: 6rem;
@@ -160,194 +166,173 @@ body{
     align-items: center;
     margin: 2rem;
 }
-.zoo_features .features_grid .card_exotic .title {
-    color: var(--main-colour-dark);
+.card_exotic h1{
+    color: var(--font-black-color);
     font-weight: 900;
     font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.card_exotic p{
     margin-left: 2rem;
-}
-.zoo_features .features_grid .card_exotic p{
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    color: var(--main-colour);
-    padding-top: 1rem;
-    line-height: 1.4rem;
-}
-
-/* card mordern  */
-
-.zoo_features .features_grid .card_mordern{
-    background: #fff;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 30px;
-}
-
-.zoo_features .features_grid .card_mordern .icon{
-    background-color: var(--bg-colour-dark);
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-.zoo_features .features_grid .card_mordern .title {
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-}
-.zoo_features .features_grid .card_mordern p{
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    padding-top: 1rem;
-    line-height: 1.4rem;
-    color: var(--main-colour);
-}
-
-/* card popular  */
-
-.zoo_features .features_grid .card_popular{
-    background: var(--bg-colour-dark);
-    height: 20rem;
-    width: 20rem;
-    border-radius: 30px;
-}
-
-.zoo_features .features_grid .card_popular .icon{
-    background-color: #fff;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-.zoo_features .features_grid .card_popular .title {
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-}
-.zoo_features .features_grid .card_popular p{
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    padding-top: 1rem;
-    line-height: 1.4rem;
-    color: var(--main-colour);
-}
-
-/* End of features section  */
-
-/* About Zoo section start  */
-
-.about_zoo{
-    height: 140vh;
-    display: flex;
-    justify-content: space-between;
-}
-.about_zoo img{
-    height: 800px;
-}
-.about_zoo .about_info{
-    gap: 1.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-right: 7rem;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+    line-height: 32px;
     margin-top: 2rem;
 }
-.about_zoo .about_info h4{
-    color: var(--main-colour);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.about_zoo .about_info h1{
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 4rem;
-}
-.about_zoo .about_info p{
-    color: var(--main-colour-grayish);
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem
-}
-.about_zoo .about_info ul{
-    list-style-type: none;
-    padding-left: 0.5rem;
-}
-.about_zoo .about_info ul li{
-    line-height: 3rem;
-    color: var(--main-colour);
-    font-size: 1rem;
-    font-weight: 400;
-}
-.about_zoo .about_info .link p{
-    color: var(--main-colour);
-    font-size: 1rem;
-    font-weight: 400;
-}
-.about_zoo .about_info .link a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.4rem
-}
 
-/* end of About  */
+/* modern card  */
 
-/* start of live section  */
-
-.watch_video{
-    height: 120vh;
+.card_mordern{
+    background: #fff;
+    height: 25rem;
+    width: 23.125rem;
+    border-radius: 48px;
 }
-.watch_video .content{
+.card_mordern .icon{
+    background-color: var(--background-color);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    margin: 2rem;
 }
-.watch_video .content h4{
-    color: var(--main-colour);
-    font-size: 0.8rem;
+.card_mordern h1{
+    color: var(--font-black-color);
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.card_mordern p{
+    margin-left: 2rem;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+    line-height: 32px;
+    margin-top: 2rem;
+}
+/* popular card  */
+.card_popular{
+    background: var(--background-color);
+    height: 25rem;
+    width: 23.125rem;
+    border-radius: 48px;
+}
+.card_popular .icon{
+    background-color: #fff;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.card_popular h1{
+    color: var(--font-black-color);
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+.card_popular p{
+    margin-left: 2rem;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+    line-height: 32px;
+    margin-top: 2rem;
+}
+/* end of features styling  */
+
+/* about zoo  */
+.about-zoo{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+ .about-zoo .about-image {
+    width: 900px;
+}
+.about-text{
+    align-self: center;
+    margin-left: 5rem;
+} 
+.about-text h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
-.watch_video .content h1{
-    color: var(--main-colour-dark);
+.about-text h1{
     font-weight: 900;
-    font-size: 50px;
-    line-height: 4rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
-.watch_video .content p{
-    color: var(--main-colour-grayish);
+.about-text p{
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
+    margin-top: 1rem;
+}
+.about-text li{
+    font-weight: 400;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+    line-height: 50px;
+}
+.fa-check{
+    padding-right: 1rem;
+    font-size:24px;
+    color: var(--section-head-color);
+}
+.about-text .link p{
+    font-weight: 400;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
+}
+.about-text .link a{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
+}
+
+/* live video scetion  */
+
+.live-video .text{
     text-align: center;
 }
-
-/* animal box styling  */
+.live-video .text h2{
+    font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.live-video .text h1{
+    margin-top: 2rem;
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.live-video .text p{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
+}
 
 .gif_img{
     display: flex;
-    justify-content: space-around;
-    padding-top: 5rem;
-    margin-left: 3rem;
+    gap: 4rem;
+    margin-top: 3rem;
+    justify-content: center;
 }
 .gif_img img{
-    height: 500px;
+    max-width: 100%;
 }
-
-/* end of main page image  */
 
 .gif_img .profile_box{
     display: flex;
@@ -366,16 +351,16 @@ body{
     /* girrafe profile  */
 
 .gif_img .profile_box .girrafe{
-    background: var(--main-colour);
-    height: 8rem;
-    width: 23rem;
-    border-radius: 25px;
+    background: var(--section-head-color);
+    height: 144px;
+    width: 370px;
+    border-radius: 32px;
     display: flex;
 }
 .gif_img .profile_box .girrafe .icon_bg{
     background: #fff;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -393,16 +378,16 @@ body{
     margin-left: 1rem;
 }
 .girrafe .profile_content h1{
-    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
     color: #fff;
-    font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
 }
 .girrafe .profile_content p{
-    font-family: 'Catamaran', sans-serif;
-    color: var(--faint-white);
-    font-weight: 200;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.502972);
+    font-size: var(--fade-color-font);
+    line-height: 32px;
 }
 
      /* monkey profile styling  */
@@ -410,15 +395,15 @@ body{
 
 .gif_img .profile_box .monkey{
     background: #fff;
-    height: 8rem;
-    width: 23rem;
-    border-radius: 25px;
+    height: 144px;
+    width: 370px;
+    border-radius: 32px;;
     display: flex;
 }
 .gif_img .profile_box .monkey .icon_bg{
-    background: var(--bg-colour);
-    height: 4.5rem;
-    width: 4.5rem;
+    background: var(--background-color);
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -436,31 +421,30 @@ body{
     margin-left: 1rem;
 }
 .monkey .profile_content h1{
-    font-family: 'Catamaran', sans-serif;
-    color: var(--main-colour-dark);
-    font-weight: 700;
+    font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
-    margin-bottom: 0.7rem;
 }
 .monkey .profile_content p{
-    font-family: 'Catamaran', sans-serif;
-    color: var(--main-colour);
-    font-weight: 200;
+    font-weight: 400;
+    color: var(--fade-color);
+    font-size: var(--fade-color-font);
+    line-height: 32px;
 }
 
 /* tiger profile  */
 
 .gif_img .profile_box .tiger{
     background: #fff;
-    height: 8rem;
-    width: 23rem;
-    border-radius: 25px;
+    height: 144px;
+    width: 370px;
+    border-radius: 32px;
     display: flex;
 }
 .gif_img .profile_box .tiger .icon_bg{
-    background: var(--bg-colour);
-    height: 4.5rem;
-    width: 4.5rem;
+    background: var(--background-color);
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -478,16 +462,15 @@ body{
     margin-left: 1rem;
 }
 .tiger .profile_content h1{
-    font-family: 'Catamaran', sans-serif;
-    color: var(--main-colour-dark);
-    font-weight: 700;
+    font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
 }
 .tiger .profile_content p{
-    font-family: 'Catamaran', sans-serif;
-    color: var(--main-colour);
-    font-weight: 200;
+    font-weight: 400;
+    color: var(--fade-color);
+    font-size: var(--fade-color-font);
 }
 /* down arrow sytle  */
 
@@ -497,121 +480,114 @@ body{
     background-color: #fff;
     border-radius: 25rem;
 }
+.arrow_down .fa-chevron-down{
+    font-size:30px;
+    color: #348183;
+    margin-top: 1rem;
+}
 .arrow_down .arrow_box{
     display: flex;
     justify-content: center;
-}
-.arrow_down .arrow_box img{
-   height: 3rem;
-   width: 3rem;
-   margin-top: 1rem;
+    align-items: center;
 }
 
-/* end of video play section with girraffe image  */
-
+/* service section  */
 .service{
-    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 5.5rem;
+    position: relative;
 }
-.service .tiger_img{
-    height: 800px;
+.service .tiger-img {
+   width: 900px;
 }
-.service .service_content{
+
+.service-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    margin-left: 5rem;
+    gap: 1rem;
+    margin-left: 20rem;
+    margin-top: 8%;
 }
-.service .service_content h4{
-    color: var(--main-colour);
-    font-size: 0.8rem;
+.service-text h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
-.service .service_content h1{
-    color: var(--main-colour-dark);
+.service-text h1{
     font-weight: 900;
-    font-size: 50px;
-    line-height: 4rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
-.service .service_content p{
-    color: var(--main-colour-grayish);
+.service-text p{
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
-.service .service_content .line_text{
+.service-text .line_text{
     display: flex;
     align-items: center;
 }
-.service .service_content .line_text img{
+.service-text .line_text img{
     height: 5.2rem;
 }
-.service .service_content .line_text p{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 1.2rem;
-    line-height: 2rem;
-    color: var(--main-colour);
-
-}
-.service .service_content .learn_more p{
-    color: var(--main-colour);
-    font-size: 1rem;
+.service-text .line_text p{
+    margin-left: 1.5rem;
+    color: var(--fade-color);
+    font-size: var(--fade-color-font);
     font-weight: 400;
 }
-.service .service_content .learn_more a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.4rem
+
+.service-text .learn_more p{
+    color: var(--fade-color);
+    font-size: var(--fade-color-font);
+    font-weight: 400;
+}
+.service-text .learn_more a{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
 }
 
-/* zoo map style  */
-
-.zoo_map{
-    height: 170vh;
-    padding-top: 10rem;
+/* map styling  */
+.map-text{
+    text-align: center;
+    padding-bottom: 2rem;
 }
-.zoo_map .map_image{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+.map_image{
+    text-align: center;
 }
-.zoo_map .map_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.zoo_map .map_content h4{
-    color: var(--main-colour);
-    font-size: 1rem;
+.map-text h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
-.zoo_map .map_content h1{
-    color: var(--main-colour-dark);
+.map-text h1{
+    margin-top: 2rem;
     font-weight: 900;
-    font-size: 2.8rem;
-    line-height: 4rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
-.zoo_map .map_content p{
-    color: var(--main-colour-grayish);
+.map-text p{
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-    text-align: center;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 
 .animals_count{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 3.5rem;
+    gap: 5rem;
 
 }
 .animals_count .animals{
@@ -620,8 +596,9 @@ body{
 }
 .animals_count .animals .num_1 h1{
     font-weight: 900;
-    font-size: 3.5rem;
-    color: var(--main-colour-dark);
+    color: var(--font-black-color);
+    font-size: 4.5rem;
+    line-height: 5rem;
 }
 .animals_count .animals .animals_info{
     margin-left: 1.5rem;
@@ -629,82 +606,89 @@ body{
 
 }
 .animals_count .animals .animals_info h2 {
-    color: var(--main-colour-dark);
-    font-weight: 700;
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 1.5rem;
 }
 .animals_count .animals .animals_info p{
     line-height: 1.5rem;
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     padding-top: 1.2rem;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
 
-/* END OF LOCATION SECTION  */
-
-/* gallery secton style  */
-
-.zoo_gallery{
-    height: 180vh;
-    padding-top: 11rem;
-
-}
-.zoo_gallery .gallery_content{
-    margin-left: 7rem;
-    
-}
-.zoo_gallery .gallery_content h4{
-    color: var(--main-colour);
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.zoo_gallery .gallery_content h1{
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 2.8rem;
-    line-height: 4rem;
-}
-.zoo_gallery .gallery_content p{
-    line-height: 1.5rem;
-    color: var(--main-colour-grayish);
-    padding-top: 1.2rem;
-    font-weight: 400;
-    font-size: 1.1rem;
-}
-
-    /* gallery images view  */
-
-.zoo_gallery .image_gallery{
+/* gallery section  */
+.gallery .gallery-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.gallery-text{
+    margin-right: 40rem;
+}
+.gallery-text h2{
+    font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.gallery-text h1{
+    margin-top: 2rem;
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.gallery-text p{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
+}
+
+  /* gallery images view  */
+
+.gallery .image_gallery{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
     gap: 2rem;
     padding-top: 4rem;
+    
 }
 
 /* common elements in gallery large images */
 .animal_card_large{
-    background-color: var(--main-colour);
-    height: 23rem;
-    width: 32rem;
-    border-radius: 25px;
+    background-color: var(--section-head-color);
+    height: 25rem;
+    width: 35.625rem;
+    border-radius: 32px;
 }
 .animal_card_large .cover_img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    height: 17.5rem;
+    width: 34.625rem;
+    border-radius: 24px;
+    background: url(./images/girrafe_1.jpeg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
 }
-.animal_card_large .cover_img img{
+/* .animal_card_large .cover_img img{
     height: 18rem;
     width: 31rem;
     border-radius: 25px;
-}
+} */
 .image_gallery  .animal_card_large .card_pro{
     display: flex;
     align-items: center;
     margin-left: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 0.7rem;
 }
 .image_gallery  .animal_card_large .card_pro .backg{
@@ -721,40 +705,44 @@ body{
     width: 2rem;
 }
 .image_gallery .animal_card_large .card_pro h3{
+    font-weight: 900;
     color: #fff;
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
 }
 
  /* first gallery  */
 
 .image_gallery .gallery_1{
     display: flex;
-    justify-content: center;
     gap: 3rem;
 }
 .image_gallery .gallery_1 .animal_card{
-    background-color: var(--main-colour);
-    height: 23rem;
-    width: 14rem;
-    border-radius: 25px;
+    background-color: var(--section-head-color);
+    height: 25rem;
+    width: 16.875rem;
+    border-radius: 32px;
 }
 .image_gallery .gallery_1 .animal_card .cover_img{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 17.5rem;
+    width: 15.875rem;
+    border-radius: 24px;
+    background: url(./images/monkey_1.jpeg) no-repeat;
+    background-size: cover;
+    margin: 0.5rem 0.5rem;
 }
-.image_gallery .gallery_1 .animal_card img{
+/* .image_gallery .gallery_1 .animal_card img{
     height: 18rem;
     border-radius: 25px;
     padding-top: 0.5rem;
-}
+} */
 .image_gallery  .gallery_1 .animal_card .card_pro{
     display: flex;
     align-items: center;
     margin-left: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 0.7rem;
 }
 .image_gallery  .gallery_1 .animal_card .card_pro .backg{
@@ -771,39 +759,44 @@ body{
     width: 2rem;
 }
 .image_gallery  .gallery_1 .animal_card .card_pro h3{
+    font-weight: 900;
     color: #fff;
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
 }
 
 /* second gallery  */
-.zoo_gallery .gallery_2{
+.gallery .gallery_2{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 3rem;
 }
 .image_gallery .gallery_2 .animal_card{
-    background-color: var(--main-colour);
-    height: 23rem;
-    width: 14rem;
-    border-radius: 25px;
+    background-color: var(--section-head-color);
+    height: 25rem;
+    width: 16.875rem;
+    border-radius: 32px;
 }
 .image_gallery .gallery_2 .animal_card .cover_img{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 17.5rem;
+    width: 15.875rem;
+    border-radius: 24px;
+    background: url(./images/elephant_1.jpeg) no-repeat;
+    background-size: cover;
+    margin: 0.5rem 0.5rem;
 }
-.image_gallery .gallery_2 .animal_card img{
+/* .image_gallery .gallery_2 .animal_card img{
     height: 18rem;
     border-radius: 25px;
     padding-top: 0.5rem;
-}
+} */
 .image_gallery  .gallery_2 .animal_card .card_pro{
     display: flex;
     align-items: center;
     margin-left: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 0.7rem;
 }
 .image_gallery  .gallery_2 .animal_card .card_pro .backg{
@@ -820,75 +813,71 @@ body{
     width: 2rem;
 }
 .image_gallery  .gallery_2 .animal_card .card_pro h3{
+    font-weight: 900;
     color: #fff;
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5rem;
 }
 
-
-                /* learn more of gallery section  */
-.zoo_gallery .gallery_learn{
+/* learn more of gallery section  */
+.gallery .gallery_learn{
     text-align: center;
     margin-top: 3rem;
 }
-.zoo_gallery .gallery_learn p{
-    color: var(--main-colour-grayish);
+.gallery .gallery_learn p{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
+    color: var(--fade-color);
 }
-.zoo_gallery .gallery_learn a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 0.9rem;
+.gallery .gallery_learn a{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
 }
 
-                /* end of gallery   */
+/* end of gallery  */
 
-/* zoo tickets stying  */
-
-.zoo_tickets{
-    height: 140vh;
-    background: url(../zoo/images/tickets_bg.png) no-repeat;
-    background-position: center;
+/* tickets section  */
+.tickets{
+    background: url(./images/tickets_bg.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    justify-content: center;
 }
-.zoo_tickets .ticket_info{
+.ticket_info{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.zoo_tickets .ticket_info h4{
-    color: #fff;
-    font-size: 0.8rem;
+.ticket_info h2{
     font-weight: 700;
+    color: #fff;
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
 }
-.zoo_tickets .ticket_info h1{
+.ticket_info h1{
     color: #fff;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 }
-.zoo_tickets .ticket_info p{
+.ticket_info p{
     color: #fff;
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
     text-align: center;
 }
-.zoo_tickets .ticket_info .tickets_btn{
+.ticket_info .tickets_btn{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
 }
-.zoo_tickets .ticket_info .tickets_btn .btn_orange{
+.ticket_info .tickets_btn .btn_orange{
     background-color: #dd9f39;
     font-family: inherit;
     color: #fff;
@@ -899,8 +888,9 @@ body{
     height: 48px;
     text-transform: uppercase;
     border-radius: 35px;
+    cursor: pointer;
 }
-.zoo_tickets .ticket_info .tickets_btn .btn_white{
+.ticket_info .tickets_btn .btn_white{
     background: transparent;
     font-family: inherit;
     color: #fff;
@@ -912,161 +902,172 @@ body{
     text-transform: uppercase;
     border-radius: 35px;
     border: solid 1px;
+    cursor: pointer;
 }
+/* end of tickets styling  */
 
-     /* zoo events section styling  */
-
-.events_zoo{
-    height: 140vh;
-
-}
-.events_zoo .event_info{
-    margin-left: 10rem;
-}
-.events_zoo .event_info .heading h4{
-    color: var(--main-colour);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.events_zoo .event_info .heading h1{
-    color: var(--main-colour-dark);
-    font-weight: 900;
-    font-size: 2.5rem;
-}
-.events_zoo .event_info .heading p{
-    color: var(--main-colour-grayish);
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-}
-
-/* events card style  */
-.events_zoo .event_pictures {
+/* events styling  */
+.events .events-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
+}
+.event-text{
+    margin-right: 35rem;
+}
+.event-text h2{
+    font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.event-text h1{
+    margin-top: 2rem;
+    font-weight: 900;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.event-text p{
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
+}
+
+/* events card style  */
+.events .event_pictures {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 5rem;
     gap: 1rem;
 }
-.events_zoo .event_pictures .event_pic_cards{
+.events .event_pictures .event_pic_cards{
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg-colour-dark);
+    background-color: var(--background-color);
     height: 11rem;
-    width: 65rem;
+    width: 73.125rem;
     border-radius: 25px;
 }
 
-.events_zoo .event_pictures .zebra_card{
+.events .event_pictures .zebra_card{
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     height: 11rem;
-    width: 65rem;
+    width: 73.125rem;
     border-radius: 25px;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content{
+.events .event_pictures .event_pic_cards .img_content{
     display: flex;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content .img_card{
+.events .event_pictures .event_pic_cards .img_content .img_card{
     display: flex;
     align-items: center;
     margin-left: 0.5rem;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content .img_card img{
+.events .event_pictures .event_pic_cards .img_content .img_card img{
     height: 10rem;
     border-radius: 25px;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content .text_events{
+.events .event_pictures .event_pic_cards .img_content .text_events{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 2rem;
     gap: 0.7rem;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content .text_events h1{
-    color: var(--main-colour-dark);
+.events .event_pictures .event_pic_cards .img_content .text_events h1{
     font-weight: 900;
-    font-size: 1.3rem;
+    color: var(--font-black-color);
+    font-size: 1.5rem;
 }
-.events_zoo .event_pictures .event_pic_cards .img_content .text_events p{
-    color: var(--main-colour-grayish);
+.events .event_pictures .event_pic_cards .img_content .text_events p{
+    line-height: 1.5rem;
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: var(--fade-color-font)
 }
-.events_zoo .event_pictures .event_pic_cards .calender{
+.events .event_pictures .event_pic_cards .calender{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 2rem;
 }
-.events_zoo .event_pictures .event_pic_cards .calender h1{
-    color: var(--main-colour-dark);
+.events .event_pictures .event_pic_cards .calender h1{
     font-weight: 900;
-    font-size: 50px;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
-.events_zoo .event_pictures .event_pic_cards .calender p{
-    color: var(--main-colour-grayish);
+.events .event_pictures .event_pic_cards .calender p{
     font-weight: 400;
-    font-size: 1.1rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
     text-align: center;
 }
-.events_zoo .want_to_know{
-    padding-top: 3rem;
+
+.events .want_to_know{
+    margin-top: 3rem;
     text-align: center;
 }
-.events_zoo .want_to_know p{
-    color: var(--main-colour-grayish);
+.events .want_to_know p{
+    font-size: var(--fade-color-font);
     font-weight: 400;
-    font-size: 1rem;
+    color: var(--fade-color);
 }
-.events_zoo .want_to_know a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 0.9rem;
+.events .want_to_know a{
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
 }
-/* end of events section  */
+
+/* end of event  */
 
 /* testimonials section  */
 .testimonials{
-    height: 120vh;
-    margin-top: 8rem;
+    
 }
 .testimonials .testimonials_head{
     text-align: center;
 }
-.testimonials .testimonials_head h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
+.testimonials .testimonials_head h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .testimonials .testimonials_head h1{
-    color: var(--main-colour-dark);
+    margin-top: 2rem;
     font-weight: 900;
-    font-size: 3rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 .testimonials .testimonials_head p{
-    color: var(--main-colour-grayish);
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 .testimonials .testimony_cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 /* card with white background  */
 .testimonials .testimony_cards .white_bg{
     background-color: #fff;
-    width: 22rem;
-    height: 21rem;
+    width: 23.125rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1100,37 +1101,29 @@ body{
 }
 .testimonials .testimony_cards .white_bg .card_message p{
     line-height: 1.5rem;
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
-.testimonials .testimony_cards .white_bg .card_message h2{
-    color: var(--main-colour-dark);
+.testimonials .testimony_cards .white_bg .card_message h1{
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
     margin-top: 0.5rem;
 }
 /* end of white card styling  */
 
-/* left and right cards  */
+/* far left  */
 .testimonials .testimony_cards .left_margin{
-    margin-left: 5rem;
-}
-.testimonials .testimony_cards .right_margin{
-    margin-right: 5rem;
-}
-/* card same as background color styling  */
-
-.testimonials .testimony_cards .rate_card{
-    background-color: var(--bg-colour-dark);
-    width: 22rem;
-    height: 21rem;
+    background-color: #fff;
+    width: 23.125rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     border-radius: 35px;
 }
-/* far left  */
+
 .testimonials .testimony_cards .rate_card .profile_img .bg{
     /* background-color: #fff; */
     background-image: url(../zoo/images/man_1.jpg);
@@ -1148,6 +1141,15 @@ body{
 }
 
 /* far right  */
+.testimonials .testimony_cards .right_margin{
+    background-color: #fff;
+    width: 23.125rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 35px;
+}
 .testimonials .testimony_cards .rate_card .profile_img .far_right{
     /* background-color: #fff; */
     background-image: url(../zoo/images/man_2.jpg);
@@ -1169,21 +1171,18 @@ body{
     width: 5rem;
     display: none;
 }
-.testimonials .testimony_cards .rate_card .rate_star{
-    margin-left: 1.5rem;
-}
 .testimonials .testimony_cards .rate_card .card_message{
     margin-left: 1.5rem;
 }
 .testimonials .testimony_cards .rate_card .card_message p{
     line-height: 1.5rem;
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
-.testimonials .testimony_cards .rate_card .card_message h2{
-    color: var(--main-colour-dark);
+.testimonials .testimony_cards .rate_card .card_message h1{
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
     margin-top: 0.5rem;
 }
@@ -1192,61 +1191,64 @@ body{
     margin-top: 3rem;
 }
 .testimonials .wanna_know p{
-    color: var(--main-colour-grayish);
+    font-size: var(--fade-color-font);
     font-weight: 400;
-    font-size: 1rem
+    color: var(--fade-color);
 }
 .testimonials .wanna_know a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 0.9rem;
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
+}
+ .rate_card .rate_star{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.rate_star .fa-star{
+    color:#dd9f39;
+    font-size:24px;
 }
 
 /* end of testimonials  */
 
 /* zoo pricing  */
-.zoo_pricing {
-    height: 100vh;
-    background: url(../zoo/images/pricin_bg.png);
-    background-repeat: no-repeat;
-    background-position: 15%;
-    /* display: flex; */
-    /* align-items: center; */
 
-}
 .zoo_pricing .price_card_bg{
-    /* background-color: red; */
-    /* height: 300px; */
-    /* width: 100rem; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 6rem;
-
+    flex-wrap: wrap;
+}
+.price_card_bg .card-container{
+    background: url(../zoo/images/pricin_bg.png) no-repeat;
+    height: 600px;
+    width: 700px;
 }
 /* price card  */
 .zoo_pricing .price_card_bg .price_card{
     background-color: #fff;
-    width: 30rem;
+    width: 31.25rem;
     height: 25rem;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
+    margin-top: 4.5rem;
 }
 .zoo_pricing .price_card_bg .price_card h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
-    font-size: 4rem;
+    color: var(--font-black-color);
+    font-size: 4.5rem;
     margin-left: 3rem;
     margin-top: 1rem;
 }
 .zoo_pricing .price_card_bg .price_card h2{
-    color: var(--main-colour-dark);
     font-weight: 900;
-    font-size: 2rem;
+    color: var(--font-black-color);
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
     margin-left: 3rem;
 }
 .zoo_pricing .price_card_bg .price_card .price_list{
@@ -1257,8 +1259,8 @@ body{
 }
 .zoo_pricing .price_card_bg .price_card .price_list ul li{
     line-height: 1.5rem;
-    color: var(--main-colour);
-    font-size: 1rem;
+    color: var(--fade-color);
+    font-size: var(--fade-color-font);
     font-weight: 400;
 }
 .zoo_pricing .price_card_bg .price_card .price_btn{
@@ -1267,7 +1269,7 @@ body{
     align-items: center;
 }
 .zoo_pricing .price_card_bg .price_card  button{
-    background: var(--main-colour);
+    background: var(--section-head-color);
     color: #fff;
     font-family: inherit;
     font-weight: bold;
@@ -1277,6 +1279,7 @@ body{
     height: 48px;
     text-transform: uppercase;
     border-radius: 35px;
+    cursor: pointer;
 }
 
 /* price detials  */
@@ -1287,100 +1290,105 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-left: 2rem;
-    margin-top: 2rem;
 }
-.zoo_pricing .price_card_bg .price_details h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
+.zoo_pricing .price_card_bg .price_details h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .zoo_pricing .price_card_bg .price_details h1{
-    color: var(--main-colour-dark);
+    /* margin-top: 2rem; */
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 4rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 .zoo_pricing .price_card_bg .price_details p{
-    color: var(--main-colour-grayish);
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 .zoo_pricing .price_card_bg .price_details .know_more{
 
 }
 .zoo_pricing .price_card_bg .price_details .know_more p{
-    color: var(--main-colour-grayish);
+    font-size: var(--fade-color-font);
     font-weight: 400;
-    font-size: 1rem;
+    color: var(--fade-color);
 }
 .zoo_pricing .price_card_bg .price_details .know_more a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 0.9rem;
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
 }
 /* end of pricing section  */
 
 /* donation section  */
-.zoo_donation{
-    height: 100vh;
-    background-image: url(../zoo/images/donation_bg.png);
-    background-repeat: no-repeat;
-    background-position: 85%;
-}
-.zoo_donation .donation_bg{
+
+.donation .donation_bg{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
-.zoo_donation .donation_details{
+.donation .donation_details{
     display: flex;
     flex-direction: column;
     margin-left: 5rem;
     gap: 2rem;
 }
-.zoo_donation .donation_details h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
+.donation .donation_details h2{
     font-weight: 700;
-    text-transform: uppercase
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
-.zoo_donation .donation_details h1{
-    color: var(--main-colour-dark);
+.donation .donation_details h1{
+    /* margin-top: 2rem; */
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 4rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
-.zoo_donation .donation_details p{
-    color: var(--main-colour-grayish);
+.donation .donation_details p{
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 /* .zoo_donation .donation_details .know_more{
 
 } */
-.zoo_donation .donation_details .know_more p{
-    color: var(--main-colour-grayish);
+.donation .donation_details .know_more p{
+    font-size: var(--fade-color-font);
     font-weight: 400;
-    font-size: 1rem;
+    color: var(--fade-color);
 }
-.zoo_donation .donation_details .know_more a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 0.9rem;
+.donation .donation_details .know_more a{
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
 }
 
 /* donation card  */
+.donation_bg .card-contain{
+    background: url(../zoo/images/pricin_bg.png) no-repeat;
+    height: 600px;
+    width: 700px;
+}
+.donation_bg .card-contain .card-controller{
+    margin-left: 3.2rem;
+    margin-top: 4rem;
+}
 
-.zoo_donation .donation_card{
+.donation .donation_card{
     background-color: #fff;
-    width: 30rem;
+    width: 31.25rem;
     height: 25rem;
     border-radius: 40px;
     display: flex;
@@ -1388,22 +1396,22 @@ body{
     gap: 1.5rem;
     margin-right: 6rem;
 }
-.zoo_donation .donation_card .circles{
+.donation .donation_card .circles{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.zoo_donation .donation_card .big_circle{
+.donation_card .big_circle{
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
-    background-color: var(--main-colour);
+    background-color: var(--section-head-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.zoo_donation .donation_card .big_circle .small_circle{
+.donation_card .big_circle .small_circle{
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
@@ -1412,32 +1420,32 @@ body{
     justify-content: center;
     align-items: center;
 }
-.zoo_donation .donation_card .big_circle .small_circle h1{
-    color: var(--main-colour-dark);
+.donation_card .big_circle .small_circle h1{
+    color: var(--font-black-color);
     font-weight: 900;
     font-size: 2.5rem;
 }
-.zoo_donation .donation_card .amount{
+.donation_card .amount{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.zoo_donation .donation_card .amount .bold h2{
-    color: var(--main-colour-dark);
+.donation .donation_card .amount .bold h2{
+    color: var(--font-black-color);
     font-weight: 900;
     font-size: 2.5rem;
 }
-.zoo_donation .donation_card .amount .light h4{
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1.1rem;
+.donation .donation_card .amount .light h4{
+    color: var(--fade-color);
+    font-weight: 400;
+    font-size: var(--fade-color-font);
 }
-.zoo_donation .donation_card .donate_button{
+.donation .donation_card .donate_button{
     display: flex;
     justify-content: center;
 }
-.zoo_donation .donation_card button{
-    background: var(--main-colour);
+.donation_card button{
+    background: var(--section-head-color);
     color: #fff;
     font-family: inherit;
     font-weight: bold;
@@ -1447,6 +1455,7 @@ body{
     height: 48px;
     text-transform: uppercase;
     border-radius: 35px;
+    cursor: pointer;
 }
 
 /* end of donation  */
@@ -1454,32 +1463,33 @@ body{
 /* zoo questions  */
 
 .zoo_questions{
-    height: 120vh;
+    
 }
 .zoo_questions .content{
-    margin-top: 5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.zoo_questions .content h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
+.zoo_questions .content h2{
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .zoo_questions .content h1{
-    color: var(--main-colour-dark);
+    /* margin-top: 2rem; */
     font-weight: 900;
-    font-size: 3rem;
-    line-height: 3rem;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
+    line-height: 3rem
 }
 .zoo_questions .content p{
-    color: var(--main-colour-grayish);
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 
 
@@ -1501,15 +1511,15 @@ body{
     margin-left: 2rem;
 }
 .zoo_questions .move_card .questions_card_bg .card_important h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
 }
 .zoo_questions .move_card .questions_card_bg P{
     line-height: 1.5rem;
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: var(--fade-color-font);
     padding-top: 1rem;
 }
 .zoo_questions .move_card .questions_card_bg .card_important .head{
@@ -1529,30 +1539,51 @@ body{
     justify-content: space-between;
 }
 .zoo_questions .move_card .questions_card_bg .meaning_ofzoo .head h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
 }
 .zoo_questions .move_card .questions_card_bg .meaning_ofzoo .arrowdown{
     margin-right: 2rem;
+    background: transparent;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--section-head-color);
 }
+.zoo_questions .move_card .questions_card_bg .card_important .arrowup{
+    margin-right: 2rem;
+    background: transparent;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--section-head-color);
+}
+
 .zoo_questions hr{
     width: 90%;
     height: 1px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--main-colour);
+    background-color: var(--section-head-color);
     border: 0 none;
+    opacity: 0.3;
 }
-
 
 /* zoo instagram styling  */
 
 .zoo_instagram{
-    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 4rem;
 }
 .zoo_instagram .insta_content{
     display: flex;
@@ -1564,31 +1595,31 @@ body{
     gap: 1rem;
 }
 .zoo_instagram .insta_content .insta_head h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
 }
 .zoo_instagram .insta_content .insta_head p{
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
 /* .zoo_instagram .insta_content .insta_head .learn{
     
 } */
 .zoo_instagram .insta_content .insta_head .learn p{
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
 .zoo_instagram .insta_content .insta_head .learn a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
 }
 .zoo_instagram .insta_content .pics {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 .zoo_instagram .insta_content .pics .pic_1{
@@ -1633,28 +1664,33 @@ body{
 /* zoo news styling  */
 
 .zoo_news{
-    height: 120vh;
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.zoo_news .news-container{
+    align-self: center;
 }
 .zoo_news .news_head{
-    margin-left: 9rem;
+    
 }
 .zoo_news .news_head h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
     font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .zoo_news .news_head h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 2.5rem;
+    line-height: 3rem;
 }
 .zoo_news .news_head p{
-    color: var(--main-colour-grayish);
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    color: var(--font-black-color);
+    font-size: var(--sections-paragragh);
+    line-height: 32px;
 }
 
 /* news card cointainer  */
@@ -1662,7 +1698,6 @@ body{
 .zoo_news .news_img_bg{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -1685,16 +1720,15 @@ body{
     border-radius: 25px;
 }
 .zoo_news .news_img_bg .news_card_large h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 0.5em;
 }
 .zoo_news .news_img_bg .news_card_large p{
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
     line-height: 1rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
@@ -1723,20 +1757,20 @@ body{
     margin-left: 1.5rem;
 }
 .zoo_news .news_img_bg .news_card .news_info h4{
-    color: var(--main-colour);
-    font-size: 0.9rem;
-    font-weight: 700;
+    color: var(--font-black-color);
+    font-size: 1rem;
+    font-weight: 400;
 }
 .zoo_news .news_img_bg .news_card .news_info h1{
-    color: var(--main-colour-dark);
     font-weight: 900;
+    color: var(--font-black-color);
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
 .zoo_news .news_img_bg .news_card .news_info p{
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
     line-height: 1.4rem;
     padding-top: 1rem;
 }
@@ -1745,29 +1779,27 @@ body{
     margin-top: 3rem;
 }
 .zoo_news .get_more p{
-    color: var(--main-colour);
+    font-size: var(--fade-color-font);
     font-weight: 400;
-    font-size: 0.9rem;
+    color: var(--fade-color);
 }
 .zoo_news .get_more a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--font-black-color);
+    font-weight: 400;
+    font-size: var(--sections-paragragh);
 }
 /* end of blog and news styling  */
 
 /* buy tickets  */
 
 .buy_tickets{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .buy_tickets .white_container{
     background-color: white;
-    height: 27rem;
+    height: 37rem;
     width: 65rem;
     border-radius: 30px;
 }
@@ -1784,20 +1816,32 @@ body{
     border-radius: 30px;
     
 }
+.buy_tickets .white_container   .map-bottom{
+    background-image: url(./images/bottom-map.png);
+    min-height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+}
 .buy_tickets .white_container .buy_info .tickets_cn .content{
    padding-top: 3rem;
 }
 .buy_tickets .white_container .buy_info .tickets_cn .content h4{
     color: #fff;
-    font-size: 0.8rem;
+    font-size: var(--section-head-font);
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     text-align: center;
 }
 .buy_tickets .white_container .buy_info .tickets_cn .content h1{
     color: #fff;
     font-weight: 900;
-    font-size: 50px;
+    font-size: var(--sections-big-font);
     line-height: 4rem;
     text-align: center;
     padding-top: 1.5rem;
@@ -1805,7 +1849,7 @@ body{
 .buy_tickets .white_container .buy_info .tickets_cn .content p{
     color: #fff;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: var(--sections-paragragh);
     line-height: 2rem;
     text-align: center;
     padding-top: 1rem;
@@ -1827,6 +1871,7 @@ body{
     height: 48px;
     text-transform: uppercase;
     border-radius: 35px;
+    cursor: pointer;
 }
 .buy_tickets .white_container .buy_info .tickets_cn .buy_btn .btn_white{
     background: transparent;
@@ -1839,41 +1884,43 @@ body{
     height: 48px;
     text-transform: uppercase;
     border-radius: 35px;
-    border: solid 1px;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    cursor: pointer;
 }
 
 /* footer styling  */
+
 footer{
-height: 50vh;
+
 }
 footer .top{
     display: flex;
     justify-content: space-around;
 }
 footer .top .f_logo h1{
-    color: var(--main-colour-dark);
-    font-style: normal;
     font-weight: 900;
-    font-size: 1.5rem;
-    font-family: 'Catamaran', sans-serif;
+    color: var(--font-black-color);
+    font-size: 2.5rem;
 }
-/* footer .top .menu{
-    
-} */
-footer .top .menu ul{
-    list-style-type: none;
+footer .top .menu{
+    margin-top: 1.5rem;
 }
-footer .top .menu ul li{
-    line-height: 2rem;
-    color: var(--main-colour);
-    font-size: 1rem;
-    font-weight: 400;
+
+.menu_h {
+    margin-bottom: 1rem;
+}
+footer .top .menu h4{
+    font-weight: 700;
+    color: var(--section-head-color);
+    font-size: var(--section-head-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 footer .top .menu ul li a{
-    text-decoration: none;
-    color: var(--main-colour-dark);
-    font-size: 0.9rem;
-    font-weight: 500;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
 }
 footer .top  .social_icons .wp-icon{
     width: 3rem;
@@ -1886,37 +1933,30 @@ footer .top  .social_icons .wp-icon{
     margin-right: 5px;
     background: #348183;
 }
-
-
 footer .down{
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin: 3rem 4rem;
 }
-footer .down .copyright{
-    margin-left: 4rem;
-}
+
 footer .down .copyright p{
-    color: var(--main-colour-grayish);
+    color: var(--fade-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--fade-color-font);
 }
 footer .down .terms_and_privacy{
     display: flex;
     gap: 2rem;
-    margin-right: 4rem;
 }
 footer .down .terms_and_privacy .terms a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
 }
 footer .down .terms_and_privacy .privacy a{
-    text-decoration: none;
-    color: var(--main-colour-grayish);
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 400;
+    color: var(--font-black-color);
+    font-size: var(--fade-color-font);
 }
 footer hr{
     width: 90%;
@@ -1924,8 +1964,49 @@ footer hr{
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--main-colour);
+    background-color: var(--section-head-color);
     border: 0 none;
+    opacity: 0.3;
 }
 
-/* end of desktop version  */
+
+/* media query  */
+
+@media (max-width: 1400px) {
+    .hero{
+        background-size: 700px 600px;
+    }
+    .hero-text{
+        margin-top: 5rem;
+        margin-left: 8rem;
+    }
+    .hero-text h1{
+        font-size: 3.5rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+    }
+    .hero-text p{
+        margin-top: 1rem;
+    }
+    .about-image {
+        top: 1rem;
+    }
+    .about-text{
+        margin-left: 3rem;
+    }
+    .about-text h1{
+        margin-top: 1rem;
+    }
+    .about-text p{
+
+    }
+    .about-zoo .about-image{
+        width: 550px;
+    }
+    .service .tiger-img {
+        width: 500px;
+     }
+     .service-text{
+        margin-left: 15rem;
+     }
+}
