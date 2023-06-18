@@ -4,111 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts link -->
+    <title>zoo</title>
+
+    <!-- style sheet link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font style link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- icons link  -->
+    <!-- icon link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="style.css">
-    <title>zoo</title>
+
 </head>
 <body>
-    <!-- header section  -->
-
+<!-- header section  -->
     <header>
-        <div class="top-menu">
-            <div class="logo_mobile"><h1>ZOO</h1></div>
-            <nav>
-                    
-                    <ul>
-                        <li><div class="logo"> <h1>ZOO</h1> </div></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Animals</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-            </nav> 
 
-            <button type="button" class="btn_top">CONTACT</button>
-        </div>
+        <ul class="navbar">
+            <a href="#" class="logo">ZOO</a>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
 
-        <div class="top-content">
-            <h4>WELCOME TO ZOO</h4>
-            <h1>Care For<br>Any Animals</h1>
-            <p>
-            Larger than urban and open-range zoos, safari parks are<br>
-            areas where tourists can drive their own cars.
-            </p>
+        <div class="fa fa-navicon" id="menu-icon"></div>
 
-            <button type="button" class="btn_content">Explore</button>
-        </div>
+        <a href="#" class="top-button">CONTACT</a>
     </header>
-    
-    <!-- end of header  -->
 
-    <!-- features section  -->
+    <!-- hero section  -->
+    <section class="hero" id="hero">
 
-    <section class="zoo_features">
-        <div class="feature_head">
-            <h4>ZOO FEATURES</h4>
-            <h2>Park where live animals are kept so that<br>
-            people can look at them
-            </h2>
-        </div>
-        
-        <div class="features_grid">
-             <!-- card exotic  -->
-            <div class="card_exotic">
-                <div class="icon">
-                    <img src="../zoo/icons/paw.svg" >
-                </div>
-                <p class="title">Exotic</p>
-                <p>
-                    Urban and open-range zoos, safari parks<br>
-                    are areas where tourists can drive their own<br>
-                    cars to see non-native wildlife.
-                </p>
-            </div>
-                    <!-- card Modern  -->
-            <div class="card_mordern">
-                <div class="icon">
-                    <img src="../zoo/icons/sunflower.svg" >
-                </div>
-                <p class="title">Modern</p>
-                <p>
-                    Safari parks are areas where tourists can<br>
-                    drive their own cars to see non-native<br>
-                    wildlife living in large, enclosed areas.
-                </p>
-            </div>
-                <!-- card Popular  -->
-            <div class="card_popular">
-                <div class="icon">
-                    <img src="../zoo/icons/drops.svg" >
-                </div>
-                <p class="title">Popular</p>
-                <p>
-                    Drive their own cars to see non-native<br>
-                    wildlife living in large, enclosed areas. These<br>
-                    attractions allow the animals
-                </p>
-            </div>
+        <div class="hero-text">
+            <h2>Welcome to Zoo</h2>
+            <h1>Care For <br> Any Animals</h1>
+            <p>
+                Larger than urban and open-range zoos, safari parks are <br>
+                 areas where tourists can drive their own cars.
+            </p>
+            <a href="#" class="hero-btn">EXPLORE</a>
         </div>
     </section>
 
-    <!-- end of features section   -->
+    <!-- zoo features section  -->
+    <section class="features">
+        <div class="features-text">
+            <h2>zoo features</h2>
+            <h1>Park where live animals are kept so that <br> people can look at them</h1>
+        </div>
 
-    <!-- about zoo  -->
+        <div class="features_grid">
+            <!-- card exotic  -->
+           <div class="card_exotic">
+               <div class="icon">
+                   <img src="../zoo/icons/paw.svg" >
+               </div>
+               <h1>Exotic</h1>
+               <p>
+                   Urban and open-range zoos, safari parks<br>
+                   are areas where tourists can drive their own<br>
+                   cars to see non-native wildlife.
+               </p>
+           </div>
+                   <!-- card Modern  -->
+           <div class="card_mordern">
+               <div class="icon">
+                   <img src="../zoo/icons/sunflower.svg" >
+               </div>
+               <h1>Modern</h1>
+               <p>
+                   Safari parks are areas where tourists can<br>
+                   drive their own cars to see non-native<br>
+                   wildlife living in large, enclosed areas.
+               </p>
+           </div>
+               <!-- card Popular  -->
+           <div class="card_popular">
+               <div class="icon">
+                   <img src="../zoo/icons/drops.svg" >
+               </div>
+               <h1>Popular</h1>
+               <p>
+                   Drive their own cars to see non-native<br>
+                   wildlife living in large, enclosed areas.<br>These
+                   attractions allow the animals
+               </p>
+           </div>
+        </div>
+    </section>
 
-    <section class="about_zoo">
-        <img src="../zoo/images/wolve_leaf.png" alt="wolve">
-        <div class="about_info">
-            <h4>About</h4>
+    <!-- about zoo section  -->
+
+    <section class="about-zoo">
+
+            <img src="./images/wolve_leaf.png" class="about-image">
+
+        <div class="about-text">
+            <h2>About</h2>
             <h1>Natural Habitats<br> Of Animals</h1>
             <p>
             See non-native wildlife living in large, enclosed areas.<br>
@@ -121,20 +118,22 @@
             </ul>
             <div class="link"><p>Want to know more? <a href="">Learn More</a></p></div>
         </div>
+        
+        
     </section>
 
-    <!-- end of about  -->
+    <!-- live video section  -->
 
-
-    <section class="watch_video">
-        <div class="content">
-            <h4>Live Video</h4>
+    <section class="live-video">
+        <div class="text">
+            <h2>Live Video</h2>
             <h1>Watch Live Cam</h1>
             <p>
                 Attractions allow the animals more space than the small enclosures
                 <br>of traditional zoos.
             </p>
         </div>
+
         <div class="gif_img">
             <img src="../zoo/images/girrafe_leaf.png" alt="">
 
@@ -178,19 +177,19 @@
 
                 <div class="arrow_down">
                     <div class="arrow_box">
-                        <!-- <img src="../zoo/icons/downArrow.png" alt="downArrow"> -->
-                        <i class="fa fa-chevron-down" style="font-size:30px; color: #348183; margin-top: 0.5rem;"></i>
+                        <i class="fa fa-chevron-down" ></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-            <!-- service section start  -->
+    <!-- service section  -->
 
     <section class="service">
-        <div class="service_content">
-            <h4>Service</h4>
+
+        <div class="service-text">
+            <h2>Service</h2>
             <h1>Giving Animals<br> More Space</h1>
             <p>
                 Tourists can drive their own cars to see non-native<br>
@@ -207,24 +206,24 @@
 
             <div class="learn_more"><p>Want to know more? <a href="">Learn More</a></p></div>
         </div>
-
-        <img class="tiger_img" src="../zoo/images/tiger_leaf.png" alt="tiger">
+        
+            <img src="./images/tiger_leaf.png" class="tiger-img">
     </section>
 
-                <!-- zoo map section  -->
+    <!-- zoo map  -->
 
-    <section class="zoo_map">
-        <div class="map_content">
-            <h4>Zoo Map</h4>
+    <section class="map">
+
+        <div class="map-text">
+            <h2>Zoo Map</h2>
             <h1>Explore Zoo Map</h1>
             <p>
                 Safari parks are areas where tourists can drive their own cars to see<br>
                 non-native wildlife living in large, enclosed areas.
             </p>
         </div>
-        
-       <div class="map_image"><img src="../zoo/images/map.png" alt="zoo map" height="500px"></div>
-                <!-- animals counts  42 -->
+        <div class="map_image"><img src="../zoo/images/map.png" ></div>
+
         <div class="animals_count">
             <div class="animals"> 
                 <div class="num_1"><h1>42</h1></div>
@@ -249,97 +248,116 @@
                 </div>
             </div>
         </div>
-    </section>
-                        <!-- zoo gallery section  -->
- 
-    <section class="zoo_gallery">
-        <div class="gallery_content">
-            <h4>Gallery</h4>
-            <h1>Our Animals</h1>
-            <p>
-                Reserves are large swaths of land whose ecosystems and native<br>
-                species are protected protections allow animals.
-            </p>
-        </div>
 
-        <div class="image_gallery">
-             
-            <div class="gallery_1">
-
-                        <!-- girrafe -->
-                <div class="animal_card_large">
-                    <div class="cover_img"><img src="../zoo/images/girrafe_1.jpeg" alt="girrafe"></div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/girrafe_profile.png" >
-                        </div>
-                        <h3>Girrafe</h3>
-                    </div>
-                </div>
-                    <!-- monkey  -->
-
-                 <div class="animal_card">
-                    <div class="cover_img"> <img src="../zoo/images/monkey_1.jpeg" alt="monkey" width="210px"> </div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/monkey_profile.png" >
-                        </div>
-                        <h3>Monkey</h3>
-                    </div>
-                </div>
-                                <!-- tiger  -->
-                <div class="animal_card">
-                    <div class="cover_img"> <img src="../zoo/images/tiger_2.jpeg" alt="tiger" width="210px"> </div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/tiger_profile.png" >
-                        </div>
-                        <h3>Tiger</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery_2">
-                <!-- Elephant  -->
-                <div class="animal_card">
-                    <div class="cover_img"> <img src="../zoo/images/elephant_2.jpeg" alt="Elephant" width="210px"></div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/elephant_profile.png" >
-                        </div>
-                        <h3>Elephant</h3>
-                    </div>
-                </div>
-                <!-- Rhinoceros  -->
-                <div class="animal_card_large">
-                    <div class="cover_img"> <img src="../zoo/images/rhino_1.jpeg" alt="Rhino"></div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/rhino_profile.png" >
-                        </div>
-                        <h3>Rhinoceros</h3>
-                    </div>
-                </div>
-                <!-- Deer  -->
-                <div class="animal_card">
-                    <div class="cover_img"> <img src="../zoo/images/deer_1.jpeg" alt="Deer" width="210px"></div>
-                    <div class="card_pro">
-                        <div class="backg">
-                            <img src="../zoo/icons/antelope_profile.png" >
-                        </div>
-                        <h3>Deer</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="gallery_learn "> <p>Want to know more? <a href="#">Learn More</a></p> </div>
     </section>
 
-                    <!-- tickets section  -->
+    <!-- gallery section  -->
+
+    <section class="gallery">
+        <div class="gallery-container">
+
+            <div class="gallery-text">
+                <h2>Gallery</h2>
+                <h1>Our Animals</h1>
+                <p>
+                    Reserves are large swaths of land whose ecosystems and native<br>
+                    species are protected protections allow animals.
+                </p>
+            </div>
     
-    <section class="zoo_tickets">
+            <div class="image_gallery">
+                 
+                <div class="gallery_1">
+    
+                            <!-- girrafe -->
+                    <div class="animal_card_large">
+                        <div class="cover_img">
+                            <!-- <img src="../zoo/images/girrafe_1.jpeg" alt="girrafe"> -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/girrafe_profile.png" >
+                            </div>
+                            <h3>Girrafe</h3>
+                        </div>
+                    </div>
+                        <!-- monkey  -->
+    
+                     <div class="animal_card">
+                        <div class="cover_img"> 
+                            <!-- <img src="../zoo/images/monkey_1.jpeg" alt="monkey" width="210px">  -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/monkey_profile.png" >
+                            </div>
+                            <h3>Monkey</h3>
+                        </div>
+                    </div>
+                                    <!-- tiger  -->
+                    <div class="animal_card">
+                        <div class="cover_img"> 
+                            <!-- <img src="../zoo/images/tiger_2.jpeg" alt="tiger" width="210px">  -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/tiger_profile.png" >
+                            </div>
+                            <h3>Tiger</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="gallery_2">
+                    <!-- Elephant  -->
+                    <div class="animal_card">
+                        <div class="cover_img"> 
+                            <!-- <img src="../zoo/images/elephant_2.jpeg" alt="Elephant" width="210px"> -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/elephant_profile.png" >
+                            </div>
+                            <h3>Elephant</h3>
+                        </div>
+                    </div>
+                    <!-- Rhinoceros  -->
+                    <div class="animal_card_large">
+                        <div class="cover_img"> 
+                            <!-- <img src="../zoo/images/rhino_1.jpeg" alt="Rhino"> -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/rhino_profile.png" >
+                            </div>
+                            <h3>Rhinoceros</h3>
+                        </div>
+                    </div>
+                    <!-- Deer  -->
+                    <div class="animal_card">
+                        <div class="cover_img"> 
+                            <!-- <img src="../zoo/images/deer_1.jpeg" alt="Deer" width="210px"> -->
+                        </div>
+                        <div class="card_pro">
+                            <div class="backg">
+                                <img src="../zoo/icons/antelope_profile.png" >
+                            </div>
+                            <h3>Deer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="gallery_learn "> <p>Want to know more? <a href="#">Learn More</a></p> </div>
+        </div>
+       
+    </section>
+
+    <!-- buy tickets section  -->
+    <section class="tickets">
+
         <div class="ticket_info">
-            <h4>Buy ticket</h4>
+            <h2>Buy ticket</h2>
             <h1>Go To Our Zoo</h1>
             <p>
                 Protections allow animals to live and reproduce at natural rates.<br>
@@ -353,84 +371,87 @@
         </div>
     </section>
 
-            <!-- zoo events section  -->
-    
-    <section class="events_zoo">
-        <div class="event_info">
-            <div class="heading">
-                <h4>Events</h4>
+    <!-- events scetion  -->
+
+    <section class="events">
+
+        <div class="events-container">
+            <div class="event-text">
+                <h2>Events</h2>
                 <h1>Event Schedule</h1>
                 <p>
                     Swaths of land whose ecosystems and native species are protected.<br>
                     The protections allow animals to live and reproduce.
                 </p>
             </div>
-        </div>
-
-        <div class="event_pictures">
-
-            <div class="event_pic_cards">
-                <div class="img_content">
-                    <div class="img_card"> <img src="../zoo/images/children_feeding_girrafe_2.webp" alt="children"></div>
-                    <div class="text_events">
-                        <h1>Eiusmod Tempor</h1>
-                        <p>
-                            Large swaths of land whose ecosystems and native species are protected.<br> The
-                            protections allow animals to live and reproduce at natural rates.
-                        </p>
+    
+            
+            <div class="event_pictures">
+    
+                <div class="event_pic_cards">
+                    <div class="img_content">
+                        <div class="img_card"> <img src="../zoo/images/children_feeding_girrafe_2.webp" alt="children"></div>
+                        <div class="text_events">
+                            <h1>Eiusmod Tempor</h1>
+                            <p>
+                                Large swaths of land whose ecosystems and native species are protected.<br> The
+                                protections allow animals to live and reproduce at natural rates.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calender">
+                        <h1>25</h1>
+                        <p>April</p>
                     </div>
                 </div>
-                <div class="calender">
-                    <h1>25</h1>
-                    <p>April</p>
-                </div>
-            </div>
-
-            <div class="event_pic_cards zebra_card">
-                <div class="img_content">
-                    <div class="img_card"> <img src="../zoo/images/zebra_2.jpeg" alt="zebra"></div>
-                    <div class="text_events">
-                        <h1>Dolore Magna Aliqua</h1>
-                        <p>
-                            The protections allow animals to live and reproduce at natural rates. Animals are<br>
-                            allowed to roam free.
-                        </p>
+    
+                <div class="event_pic_cards zebra_card">
+                    <div class="img_content">
+                        <div class="img_card"> <img src="../zoo/images/zebra_2.jpeg" alt="zebra"></div>
+                        <div class="text_events">
+                            <h1>Dolore Magna Aliqua</h1>
+                            <p>
+                                The protections allow animals to live and reproduce at natural rates. Animals are<br>
+                                allowed to roam free.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calender">
+                        <h1>01</h1>
+                        <p>May</p>
                     </div>
                 </div>
-                <div class="calender">
-                    <h1>01</h1>
-                    <p>May</p>
-                </div>
-            </div>
-
-            <div class="event_pic_cards">
-                <div class="img_content">
-                    <div class="img_card"> <img src="../zoo/images/bear_2.jpg" alt="bear"></div>
-                    <div class="text_events">
-                        <h1>Nostrud Exercitation</h1>
-                        <p>
-                            Native species are protected. The protections allow animals to live and reproduce at<br>
-                            natural rates. Animals are allowed to roam free.
-                        </p>
+    
+                <div class="event_pic_cards">
+                    <div class="img_content">
+                        <div class="img_card"> <img src="../zoo/images/bear_2.jpg" alt="bear"></div>
+                        <div class="text_events">
+                            <h1>Nostrud Exercitation</h1>
+                            <p>
+                                Native species are protected. The protections allow animals to live and reproduce at<br>
+                                natural rates. Animals are allowed to roam free.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calender">
+                        <h1>12</h1>
+                        <p>May</p>
                     </div>
                 </div>
-                <div class="calender">
-                    <h1>12</h1>
-                    <p>May</p>
-                </div>
+            </div>
+    
+            <div class="want_to_know">
+                <p>Want to know more? <a href="#">Learn More</a></p>
             </div>
         </div>
-
-        <div class="want_to_know">
-            <p>Want to know more? <a href="#">Learn More</a></p>
-        </div>
-
+       
     </section>
-    <!-- end of events section  -->
+
+    <!-- testimonial scetion  -->
 
     <section class="testimonials">
         <div class="testimonials_head">
-            <h4>Testimonials</h4>
+            <h2>Testimonials</h2>
             <h1>What People Say</h1>
             <p>
                 Land whose ecosystems and native species are protected. The<br>
@@ -449,11 +470,11 @@
                 </div>
                 
                 <div class="rate_star">
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
                 </div>
 
                 <div class="card_message">
@@ -462,7 +483,7 @@
                         that are gentle enough for children to pet<br>
                         and feed. Sheep, goats, donkeys.
                     </p>
-                    <h2>Deependra Bardhan</h2>
+                    <h1>Deependra Bardhan</h1>
                 </div>
 
             </div>
@@ -477,11 +498,11 @@
                 </div>
                 
                 <div class="rate_star">
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
                 </div>
 
                 <div class="card_message">
@@ -490,7 +511,7 @@
                         enough for children to pet and feed. Sheep,<br>
                         goats, donkeys, and rabbits
                     </p>
-                    <h2>Pan Su</h2>
+                    <h1>Pan Su</h1>
                 </div>
 
             </div>
@@ -505,20 +526,20 @@
                 </div>
                 
                 <div class="rate_star">
-                    <i class="fa fa-star" style="font-size:24px; color:#dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color:#dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color:#dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
-                    <i class="fa fa-star" style="font-size:24px; color: #dd9f39;"></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
                 </div>
 
                 <div class="card_message">
                     <p>
-                        Gentle enough for children to pet and feed.
-                        Sheep, goats, donkeys, and rabbits are
+                        Gentle enough for children to pet and feed.<br>
+                        Sheep, goats, donkeys, and rabbits are<br>
                         common petting zoo animals.
                     </p>
-                    <h2>Mahnaz Farzin</h2>
+                    <h1>Mahnaz Farzin</h1>
                 </div>
 
             </div>
@@ -529,18 +550,15 @@
         </div>
     </section>
 
-    <!-- end of testimonial section  -->
-
-    <!-- Pricing section  -->
-
-    <section class="zoo_pricing">
+<!-- zoo pricing section      -->
+<section class="zoo_pricing">
         
-        <div class="price_card_bg">
-        
+    <div class="price_card_bg">
+        <div class="card-container">
             <div class="price_card" >
                 <h1>$99</h1>
                 <h2>Standard Ticket</h2>
-
+    
                 <div class="price_list">
                     <ul>
                         <li><i class="fa fa-check" style="font-size:24px; padding-right: 1rem;"></i>Petting zoos feature domesticated animals</li>
@@ -550,158 +568,166 @@
                 </div>
                  <div class="price_btn"><button type="button">buy now</button></div>
             </div>
-
-            <div class="price_details">
-                <h4>Pricing</h4>
-                <h1>Buy Ticket<br>Right Now</h1>
-                <p>
-                    Some zoos are dedicated entirely to certain species.<br>
-                    Aquariums are types of zoos that exclusively house<br>
-                    aquatic animals. The Sydney Aquarium in Australia has<br>
-                    exhibits of all of Australia s major water.
-                </p>
-                <div class="know_more">
-                    <p>Want to know more? <a href="#">Learn More</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- donation section  -->
-
-    <section class="zoo_donation">
-       <div class="donation_bg">
-            <div class="donation_details">
-                <h4>Donate</h4>
-                <h1>Donate<br>And Help</h1>
-                <p>
-                    Aquariums are types of zoos that exclusively house <br>
-                    aquatic animals. The Sydney Aquarium in Australia has <br>
-                    exhibits of all of Australia s major water systems and is<br>
-                    home to more than 650 native Australian species.
-                </p>
-                <div class="know_more">
-                    <p>Want to know more? <a href="#">Learn More</a></p>
-                </div>
-            </div>
-
-            <div class="donation_card">
-
-                <div class="circles">
-                    <div class="big_circle">
-                        <div class="small_circle">
-                            <h1>49%</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="amount">
-                    <div class="bold">
-                        <h2>$2400</h2>
-                    </div>
-                    <div class="light">
-                        <h4>/$5000</h4>
-                    </div>
-                </div>
-
-                <div class="donate_button">
-                    <button>donate now</button>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- questions section  -->
-
-    <section class="zoo_questions">
-        <div class="content">
-            <h4>Questions?</h4>
-            <h1>Frequently Asked<br> Questions</h1>
-            <p>
-                Zoos are dedicated entirely to certain species. Aquariums are types<br>
-                 zoos that exclusively house aquatic animals.
-            </p>
         </div>
         
-        <div class="move_card">
-            <div class="questions_card_bg">
-                <div class="card_important">
-                    <div class="head">
-                        <h1>Why is zoo important?</h1>
-                        <div class="arrowup">
-                            <i class="fa fa-chevron-circle-up" style="font-size:36px; color: #348183;"></i>
-                        </div>
-                    </div>
-                    <p>
-                        Some zoos are dedicated entirely to certain species. Aquariums are types of zoos that<br>
-                        exclusively house aquatic animals. The Sydney Aquarium in Australia has exhibits of all of<br>
-                        Australia s major water systems and is home to more than 650 native Australian species.
-                    </p>
-                </div>
-                <hr>
-                <div class="meaning_ofzoo">
-                    <div class="head">
-                        <h1>Why is zoo important?</h1>
-                        <div class="arrowdown">
-                            <i class="fa fa-chevron-circle-down" style="font-size:36px; color: #348183;"></i>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="meaning_ofzoo">
-                    <div class="head">
-                        <h1>What do you see at the zoo?</h1>
-                        <div class="arrowdown">
-                            <i class="fa fa-chevron-circle-down" style="font-size:36px; color: #348183;"></i>
-                        </div>
-                    </div>
-                </div>
+        <div class="price_details">
+            <h2>Pricing</h2>
+            <h1>Buy Ticket<br>Right Now</h1>
+            <p>
+                Some zoos are dedicated entirely to certain species.<br>
+                Aquariums are types of zoos that exclusively house<br>
+                aquatic animals. The Sydney Aquarium in Australia has<br>
+                exhibits of all of Australia s major water.
+            </p>
+            <div class="know_more">
+                <p>Want to know more? <a href="#">Learn More</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- zoo donation section  -->
+
+<section class="donation">
+
+    <div class="donation_bg">
+        <div class="donation_details">
+            <h2>Donate</h2>
+            <h1>Donate<br>And Help</h1>
+            <p>
+                Aquariums are types of zoos that exclusively house <br>
+                aquatic animals. The Sydney Aquarium in Australia has <br>
+                exhibits of all of Australia s major water systems and is<br>
+                home to more than 650 native Australian species.
+            </p>
+            <div class="know_more">
+                <p>Want to know more? <a href="#">Learn More</a></p>
+            </div>
+        </div>
+
+        <div class="card-contain">
+            <div class="card-controller">
+                <div class="donation_card">
+
+                    <div class="circles">
+                        <div class="big_circle">
+                            <div class="small_circle">
+                                <h1>49%</h1>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="amount">
+                        <div class="bold">
+                            <h2>$2400</h2>
+                        </div>
+                        <div class="light">
+                            <h4>/$5000</h4>
+                        </div>
+                    </div>
+        
+                    <div class="donate_button">
+                        <button>donate now</button>
+                    </div>
+                </div>
             </div>
     
         </div>
-    </section>
 
-    <!-- zoo instagram gallery  -->
+    </div>
 
-    <section class="zoo_instagram">
+</section>
 
-        <div class="insta_content">
-            <div class="insta_head">
-                <h1>Our Instagram</h1>
+  <!-- questions section  -->
+
+  <section class="zoo_questions">
+    <div class="content">
+        <h2>Questions?</h2>
+        <h1>Frequently Asked<br> Questions</h1>
+        <p>
+            Zoos are dedicated entirely to certain species. Aquariums are types<br>
+             zoos that exclusively house aquatic animals.
+        </p>
+    </div>
+    
+    <div class="move_card">
+        <div class="questions_card_bg">
+            <div class="card_important">
+                <div class="head">
+                    <h1>Why is zoo important?</h1>
+                    <div class="arrowup">
+                        <i class="fa fa-angle-up" style="font-size:42px; color: #348183; margin-bottom: 1px; "></i>
+                    </div>
+                </div>
                 <p>
-                    Aquarium in Australia has exhibits of all of Australia's<br>
-                    major water systems and is home 
+                    Some zoos are dedicated entirely to certain species. Aquariums are types of zoos that<br>
+                    exclusively house aquatic animals. The Sydney Aquarium in Australia has exhibits of all of<br>
+                    Australia s major water systems and is home to more than 650 native Australian species.
                 </p>
-                <div class="learn">
-                    <p>Want to know more? <a href="#">Learn More</a></p>
+            </div>
+            <hr>
+            <div class="meaning_ofzoo">
+                <div class="head">
+                    <h1>Why is zoo important?</h1>
+                    <div class="arrowdown">
+                        <i class="fa fa-angle-down" style="font-size:42px; color: #348183;"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="meaning_ofzoo">
+                <div class="head">
+                    <h1>What do you see at the zoo?</h1>
+                    <div class="arrowdown">
+                        <i class="fa fa-angle-down" style="font-size:42px; color: #348183;"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="pics">
-                <div class="pic_1">
-                    <!-- <img src="../zoo/images/lion_1.jpeg" alt="" > -->
-                </div>
-                <div class="pic_2">
-                    <!-- <img src="../zoo/images/children_feeding_girrafe_3.jpg" alt="" > -->
-                </div>
-                <div class="pic_3">
-                    <!-- <img src="../zoo/images/elephant_1.jpeg" alt="" > -->
-                </div>
-                <div class="pic_4">
-                    <!-- <img src="../zoo/images/monkey_2.jpeg" alt="" > -->
-                </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- zoo instagram gallery  -->
+
+<section class="zoo_instagram">
+
+    <div class="insta_content">
+        
+        <div class="insta_head">
+            <h1>Our Instagram</h1>
+            <p>
+                Aquarium in Australia has exhibits of all of Australia's<br>
+                major water systems and is home 
+            </p>
+            <div class="learn">
+                <p>Want to know more? <a href="#">Learn More</a></p>
             </div>
         </div>
-    </section>
 
-    <!-- blog and news section  -->
+        <div class="pics">
+            <div class="pic_1">
+                <!-- <img src="../zoo/images/lion_1.jpeg" alt="" > -->
+            </div>
+            <div class="pic_2">
+                <!-- <img src="../zoo/images/children_feeding_girrafe_3.jpg" alt="" > -->
+            </div>
+            <div class="pic_3">
+                <!-- <img src="../zoo/images/elephant_1.jpeg" alt="" > -->
+            </div>
+            <div class="pic_4">
+                <!-- <img src="../zoo/images/monkey_2.jpeg" alt="" > -->
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="zoo_news">
+ <!-- blog and news section  -->
 
+ <section class="zoo_news">
+
+    <div class="news-container">
         <div class="news_head">
             <h4>Blog & News</h4>
             <h1>Latest Blog</h1>
@@ -710,7 +736,7 @@
                 behavior such as mating and nutrition choices.
             </p>
         </div>
-
+    
         <div class="news_img_bg">
                 <!-- girrafe -->
             <div class="news_card_large">
@@ -721,7 +747,7 @@
                 <p>They can observe behavior such as mating and nutrition choices</p>
             </div>
                 <!-- monkey  -->
-
+    
             <div class="news_card">
                 <div class="cover_img"> <img src="../zoo/images/bear_2.jpg" alt="monkey" width="220px"> </div>
                 <div class="news_info">
@@ -745,39 +771,46 @@
                     </p>
                 </div>
             </div>
-
+    
         </div>
-
+    
         <div class="get_more">
             <p>Want to know more? <a href="#"> Learn More</a></p>
         </div>
-    </section>
+    </div>
+    
+</section>
 
-    <!-- buy tickets  -->
+ <!-- buy tickets  -->
 
-    <section class="buy_tickets">
-        <div class="white_container">
-            <div class="buy_info">
-                <!-- <img src="../zoo/images/tickets_last.png" alt="" height="400px" width="1000px"> -->
-                <div class="tickets_cn">
-                    <div class="content">
-                        <h4>Buy ticket</h4>
-                        <h1>Go To Our Zoo</h1>
-                        <p>
-                            Protections allow animals to live and reproduce at natural rates.<br>
-                            Animals are allowed to roam free.
-                        </p>
-                    </div>
-                    
-                    <div class="buy_btn">
-                        <button class="btn_orange">Get Ticket</button>
-                        <button class="btn_white">Contact Us</button>
-                   </div>
+ <section class="buy_tickets">
+    
+    <div class="white_container">
+        <div class="buy_info">
+            <!-- <img src="../zoo/images/tickets_last.png" alt="" height="400px" width="1000px"> -->
+            <div class="tickets_cn">
+                <div class="content">
+                    <h4>Buy ticket</h4>
+                    <h1>Go To Our Zoo</h1>
+                    <p>
+                        Protections allow animals to live and reproduce at natural rates.<br>
+                        Animals are allowed to roam free.
+                    </p>
                 </div>
+                
+                <div class="buy_btn">
+                    <button class="btn_orange">Get Ticket</button>
+                    <button class="btn_white">Contact Us</button>
+               </div>
             </div>
+        </div>
+
+        <div class="map-bottom">
 
         </div>
-    </section>
+
+    </div>
+</section>
 
 
     <!-- footer section  -->
@@ -789,8 +822,9 @@
             </div>
 
             <div class="menu">
+                <div class="menu_h"> <h4>MENU</h4> </div>
                 <ul>
-                    <li><div class="menu_h"> <h4>MENU</h4> </div></li>
+                    <!-- <li><div class="menu_h"> <h4>MENU</h4> </div></li> -->
                     <li><a href="#">About</a></li>
                     <li><a href="#">Ticket</a></li>
                     <li><a href="#">Blog</a></li>
@@ -799,8 +833,9 @@
             </div>
 
             <div class="menu">
+                <div class="menu_h"> <h4>MENU</h4> </div>
                 <ul>
-                    <li><div class="menu_h"> <h4>ANIMALS</h4> </div></li>
+                    <!-- <li><div class="menu_h"> <h4>ANIMALS</h4> </div></li> -->
                     <li><a href="#">Giraffe</a></li>
                     <li><a href="#">Monkey</a></li>
                     <li><a href="#">Tiger</a></li>
@@ -832,6 +867,6 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
