@@ -16,9 +16,15 @@
     --section-head-font: 0.875rem;
     --fade-color-font: 1rem;
 }
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 body{
     background: var(--background-color);
     font-family: 'Catamaran', sans-serif;
+    white-space: normal;
 }
 
 header{
@@ -83,6 +89,7 @@ section{
     background-size: 972px 915px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 .hero-text{
     margin-left: 10em;
